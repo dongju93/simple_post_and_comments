@@ -1,0 +1,30 @@
+{
+  "name": "simple-post-and-comments",
+  "description": "MVC 패턴을 사용한 간단한 포스팅 및 회원가입, 로그인",
+  "License": "MIT",
+  "repostiory": {
+    "type": "git",
+    "url": "https://github.com/dongju93/simple_post_and_comments.git"
+  },
+  "keywords": [
+    "MVC",
+    "Express Application",
+    "Expressjs"
+  ],
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
