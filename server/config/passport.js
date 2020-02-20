@@ -78,7 +78,7 @@ module.exports = function (passport) {
                   // req.body 로 부터 사용자명 가져오기
                   newUser.local.name = req.body.name;
                   newUser.local.email = email;
-                  newUser.local.password = newUser.genrateHash(password);
+                  newUser.local.password = newUser.generateHash(password);
                   // 데이터 저장
                   newUser.save(function (err) {
                      if (err)

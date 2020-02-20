@@ -23,12 +23,12 @@ router.post('/login', passport.authenticate('local-login', {
 }));
 
 /* GET 메서드용 회원가입 페이지 */
-router.get('/signup', function(req, res, next) {
-  res.render('signup', { title: 'Signup Page', message: req.flash('loginMessage') });
+router.get('/signup', function(req, res) {
+  res.render('signup', { title: 'Signup Page', message: req.flash('signupMessage') });
 });
 
 /* POST 메서드용 가입 처리 */
-router.post('./signup', passport.authenticate('local-signup', {
+router.post('/signup', passport.authenticate('local-signup', {
   // 성공하면 프로필 페이지로, 실패하면 다시 회원가입 페이지로
   successRedirect: '/profile',
   failureRedirect: '/signup',
