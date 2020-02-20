@@ -65,8 +65,8 @@ module.exports = function (passport) {
       process.nextTick(function () {
          // user 가 아직 로그인 하지 않았다면
          if (!req.user) {
-            User.findOne({ 'local-email': email }, function (err, user) {
-               // 에러 발생기
+            User.findOne({ 'local.email': email }, function (err, user) {
+               // 에러 발생시
                if (err)
                   return done(err);
                // 이메일 중복 검사
