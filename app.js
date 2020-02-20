@@ -12,7 +12,7 @@ var usersRouter = require('./server/routes/users');
 var mongoose = require('mongoose');
 // 세션 저장용 모듈
 var session = require('express-session');
-var MongoStore = require('connect-mongo')('session');
+var MongoStore = require('connect-mongo')(session);
 // 패스포트와 경고 플래시 메시지 모듈 가져오기
 var passport = require('passport');
 var flash = require('connect-flash');
