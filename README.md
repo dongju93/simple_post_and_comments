@@ -4,7 +4,7 @@
 ## 2. 제목과 내용을 작성 후 게시 가능.
 
 -  nodeJS의 프레임워크인 express를 이용한 웹 어플리케이션.  
-   page 뷰 방식은 Django에서 사용했던(이전 풀스택 프로젝트에서 이용) ejs 형식을 사용.
+   page 뷰 방식은 ejs 형식을 사용(Django 풀스택 프로젝트에서 유사한 방식 사용경험).
 
 -  프로젝트의 구성도는 server 폴더 안에  
    Model, View, Controller (MVC) 폴더 생성 그외 config, routes 폴더도 함께 생성.
